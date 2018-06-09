@@ -470,7 +470,8 @@
                                     </button>
                                 </div>
                                 <div class="table-data__tool-right">
-                                    <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#tambahData">
+                                    <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal"
+                                            data-target="#tambahData">
                                         <i class="zmdi zmdi-plus"></i>tambah data
                                     </button>
                                     <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
@@ -538,7 +539,8 @@
             </div>
         </div>
         <!-- modal create -->
-        <div class="modal fade" id="tambahData" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+        <div class="modal fade" id="tambahData" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel"
+             aria-hidden="true">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -551,27 +553,10 @@
                         <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label class=" form-control-label">Static</label>
+                                    <label for="pegawai-select" class=" form-control-label">Nama Pegawai</label>
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <p class="form-control-static">Username</p>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3">
-                                    <label for="nama-input" class=" form-control-label">Nama</label>
-                                </div>
-                                <div class="col-12 col-md-9">
-                                    <input type="text" id="nama-input" name="nama-input" placeholder="John Doe" class="form-control">
-                                    <small class="form-text text-muted">Masukkan nama lengkap pegawai</small>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3">
-                                    <label for="role-select" class=" form-control-label">Role</label>
-                                </div>
-                                <div class="col-12 col-md-9">
-                                    <select name="role-select" id="role-select" class="form-control">
+                                    <select name="pegawai-select" id="pegawai-select" class="form-control">
                                         <option value="0">Please select</option>
                                         <option value="1">Option #1</option>
                                         <option value="2">Option #2</option>
@@ -581,21 +566,37 @@
                             </div>
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label class=" form-control-label">Status</label>
+                                    <label for="tanggal-input" class=" form-control-label">Tanggal</label>
                                 </div>
-                                <div class="col col-md-9">
-                                    <div class="form-check">
-                                        <div class="radio">
-                                            <label for="aktif" class="form-check-label ">
-                                                <input type="radio" id="aktif" name="aktif" value="option1" class="form-check-input">Pegawai Aktif
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label for="nonaktif" class="form-check-label ">
-                                                <input type="radio" id="nonaktif" name="nonaktif" value="option2" class="form-check-input">Pegawai Nonaktif
-                                            </label>
-                                        </div>
-                                    </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="text" id="tanggal-input" name="tanggal-input" placeholder=""
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="masuk-input" class=" form-control-label">Jam Masuk</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="text" id="masuk-input" name="masuk-input" placeholder=""
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="keluar-input" class=" form-control-label">Jam Keluar</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="text" id="keluar-input" name="keluar-input" placeholder=""
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="keterangan-input" class=" form-control-label">Keterangan</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <textarea name="keterangan-input" id="keterangan-input" rows="9" placeholder="Masukkan keterangan..." class="form-control"></textarea>
                                 </div>
                             </div>
                         </form>
