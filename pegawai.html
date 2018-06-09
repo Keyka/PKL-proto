@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Absensi</title>
+    <title>Pegawai</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -446,7 +446,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!-- DATA TABLE -->
-                            <h3 class="title-5 m-b-35">data absensi</h3>
+                            <h3 class="title-5 m-b-35">data pegawai</h3>
                             <div class="table-data__tool">
                                 <div class="table-data__tool-left">
                                     <div class="rs-select2--light rs-select2--md">
@@ -489,10 +489,7 @@
                                     <tr>
                                         <th>no.</th>
                                         <th>nama pegawai</th>
-                                        <th>tanggal</th>
-                                        <th>waktu masuk</th>
-                                        <th>waktu keluar</th>
-                                        <th>keterangan</th>
+                                        <th>role</th>
                                         <th></th>
                                     </tr>
                                     </thead>
@@ -500,10 +497,16 @@
                                     <tr class="tr-shadow">
                                         <td>1.</td>
                                         <td>Loadhi Didi</td>
-                                        <td>2018-09-27</td>
-                                        <td>02:12</td>
-                                        <td>02:15</td>
-                                        <td class="desc">Pengen bukber</td>
+                                        <td>
+                                            <div class="rs-select2--trans rs-select2--sm">
+                                                <select class="js-select2" name="property">
+                                                    <option value="">Full Control</option>
+                                                    <option value="" selected="selected">Post</option>
+                                                    <option value="">Watch</option>
+                                                </select>
+                                                <div class="dropDownSelect2"></div>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="table-data-feature">
                                                 <button class="item" data-toggle="tooltip" data-placement="top"
@@ -537,6 +540,7 @@
                 </div>
             </div>
         </div>
+
         <!-- modal create -->
         <div class="modal fade" id="tambahData" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-md" role="document">
@@ -564,6 +568,33 @@
                                 <div class="col-12 col-md-9">
                                     <input type="text" id="nama-input" name="nama-input" placeholder="John Doe" class="form-control">
                                     <small class="form-text text-muted">Masukkan nama lengkap pegawai</small>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="email-input" class=" form-control-label">E-mail</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="email" id="email-input" name="email-input" placeholder="mail@example.com" class="form-control">
+                                    <small class="help-block form-text">Masukkan e-mail pegawai</small>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="username-input" class=" form-control-label">Username</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="text" id="username-input" name="username-input" placeholder="johndoe" class="form-control">
+                                    <small class="form-text text-muted">Masukkan username pegawai</small>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="password-input" class=" form-control-label">Password</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="password" id="password-input" name="password-input" placeholder="Password" class="form-control">
+                                    <small class="help-block form-text">Masukkan password pegawai</small>
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -608,8 +639,8 @@
             </div>
         </div>
         <!-- end modal create -->
+
     </div>
-</div>
 
 </div>
 
